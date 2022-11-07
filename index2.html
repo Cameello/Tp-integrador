@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Trabajo integrador 1/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Trabajo integrador</title>
+</head>
+
+<body>
+    <div class="container-fluid contenedor">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid barrita">
+                    <ul class="navbar-brand">
+                        <img src="https://imageshack.com/i/pnk2Qwgvp" alt="" width="25%" height="" class="">
+                        <a class="navbar-brand " href="#">Conf Bs As</a>
+                    </ul>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-flex">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-secondary" aria-current="page" href="#">Los
+                                        Oradores</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-secondary" aria-current="page" href="#">El Lugar y la
+                                        fecha</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-secondary" href="#">Conviertete en orador</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-success" href="#" aria-disabled="true">Comprar
+                                        Tickets</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="">
+        <div class="recuadro">
+            <div class="contenedorBotones">
+                <span class="border border-primary itemsRecuadro col-2">
+                    <h4 class="mt-3"> Estudiante </h4>
+                    <p>Tiene un descuento</p>
+                    <b class="mb-3">80%</b>
+                    <small class="mb-3">*Presentar Documento</small>
+                </span>
+                <span class="border border-info itemsRecuadro col-2">
+                    <h4 class="mt-3">Trainee</h4>
+                    <p>Tiene un descuento</p>
+                    <b class="mb-3">50%</b>
+                    <small class="mb-3">*Presentar Documento</small>
+                </span>
+                <span class="border border-warning itemsRecuadro col-2">
+                    <h4 class="mt-3">Junior</h4>
+                    <p>Tiene un descuento</p>
+                    <b class="mb-3">15%</b>
+                    <small class="mb-3">*Presentar Documento</small>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mb-0 mt-0">
+            <p class="subTextos">VENTA</p>
+            <h2 class="subTextos">VALOR DE TICKET 200$</h2>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="formularioOrador row-6">
+            <input type="text" class="form-control me-3" placeholder="Nombre" aria-label="Nombre">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+        </div>
+
+        <div class="formularioOrador row-6">
+            <input type="text" class="form-control mt-3" placeholder="Correo" aria-label="Correo">
+        </div>
+        <div class="titulotextitos">
+            <small class="text col-6 me-2 mt-3 mb-2" style="font-size:16px; ">Cantidad</small>
+            <small class="text col-6 me-2 mt-3 mb-2" style="font-size:16px; ">Categoria</small>
+        </div>
+        <div class="mb-0">
+            <div class="row-6">
+                <form onsubmit="return descuento(this)" class="formularioOrador row-6">
+                    <input id="cantidadDeTicket" type="number" class="form-control me-3" placeholder="Cantidad"
+                        aria-label="Cantidad">
+                    <select id="selectDescuento" class="form-select">
+                        <option value="80" selected>Estudiante</option>
+                        <option value="50">Trainee</option>
+                        <option value="15">Junior</option>
+                        <div class="contenedorBotones">
+                            <button type="submit" class="btn btn-success mb-3 mt-3 botonBorrarResumen ">Borrar</button>
+                            <button id="" type="submit"
+                                class="btn btn-success mb-3 mt-3 botonBorrarResumen ">Resumen</button>
+                        </div>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="totalAPagar">
+                <li class="list-group-item list-group-item-primary mt-4">Total a pagar:$ <span
+                        id="ValorTotalDelTicketConDescuento"></span>
+                </li>
+            </div>
+        </div>
+        <div class="contenedorBotones">
+
+            <button type="button" class="btn btn-success mb-3 mt-3 botonBorrarResumen ">Borrar</button>
+            <button type="button" class="btn btn-success mb-3 mt-3 botonBorrarResumen "
+                onclick="hacerTotal()">Resumen</button>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+</body>
+<footer>
+    <div class="row">
+        <div class="col-12 fondoFooter">
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid" id="footerTexto">
+                    <a class="nav-link text-white" href="#">Preguntas frecuentes</a>
+                    <a class="nav-link text-white" href="#">Contactanos</a>
+                    <a class="nav-link text-white" href="#">Prensa</a>
+                    <a class="nav-link text-white" href="#">Conferencias</a>
+                    <a class="nav-link text-white" href="#">Terminos y condiciones</a>
+                    <a class="nav-link text-white" href="#">Privacidad</a>
+                    <a class="nav-link text-white" href="#">Estudiantes</a>
+                </div>
+            </nav>
+        </div>
+
+</footer>
+
+<script src="/utilitarios.js"></script>
+
+</html>
